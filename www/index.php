@@ -5,7 +5,7 @@ ob_start(); // Habilita o buffer de saída
 // Conexão com o banco de dados
 $dsn = 'mysql:host=localhost;port=3306;dbname=servicos;charset=utf8';
 $username = 'root';
-$password = 'Bones27$';
+$password = 'senha-do-banco';
 
 try {
     $pdo = new PDO($dsn, $username, $password);
