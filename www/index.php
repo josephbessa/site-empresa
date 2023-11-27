@@ -5,7 +5,7 @@ ob_start(); // Habilita o buffer de saída
 // Conexão com o banco de dados
 $dsn = 'mysql:host=localhost;port=3306;dbname=servicos;charset=utf8';
 $username = 'root';
-$password = 'senha-do-banco';
+$password = 'Bones27$';
 
 try {
     $pdo = new PDO($dsn, $username, $password);
@@ -29,6 +29,7 @@ $services = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.21.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style/style.css">
 
 </head>
@@ -126,6 +127,13 @@ $services = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </div>
         </div>
     </div>
+
+        <!-- Botão para voltar ao topo -->
+        <div id="btnTopoContainer" class="position-fixed bottom-0 end-0 p-3">
+            <button id="btnTopo" class="btn btn-primary btn-floating btn-lg rounded-5" onclick="topFunction()" title="Voltar ao Topo">
+                <i class="bi bi-arrow-up-circle">^</i>
+            </button>
+        </div>
 
     <footer id="contato" class="footer">
         <div class="container">
