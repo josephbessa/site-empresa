@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    color: #cfd1d1;
+    margin: 0;
+}
+
+.navbar, footer {
+    background-color: rgb(46, 43, 43);
+    z-index: 000;
+}
+
+#logo {
+    margin-left: 15%;
+}
+
+#background-image {
+    background-image: url('../img/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 17%;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.0);
+    color: black;
+}
+
+#services-carousel {
+    padding: 50px; 
+    text-align: center;
+    border-radius: 35px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    height: 100%;
+    width: 50%;
+    
+}
+
+#servico {
+    margin-top: 12%;
+}
+
+
+
+
